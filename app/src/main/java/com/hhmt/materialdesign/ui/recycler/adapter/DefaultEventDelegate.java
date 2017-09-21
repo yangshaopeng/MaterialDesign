@@ -1,4 +1,4 @@
-package com.hhmt.materialdesign.recycler.adapter;
+package com.hhmt.materialdesign.ui.recycler.adapter;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.hhmt.materialdesign.recycler.EasyRecyclerView;
+import com.hhmt.materialdesign.ui.recycler.EasyRecyclerView;
 
 
 /**

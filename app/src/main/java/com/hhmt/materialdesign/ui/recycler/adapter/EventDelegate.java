@@ -1,4 +1,4 @@
-package com.hhmt.materialdesign.recycler.adapter;
+package com.hhmt.materialdesign.ui.recycler.adapter;
 
 import android.view.View;
 

@@ -1,4 +1,4 @@
-package com.hhmt.materialdesign.recycler.adapter;
+package com.hhmt.materialdesign.ui.recycler.adapter;
 
 import android.content.Context;
 import android.support.annotation.IdRes;

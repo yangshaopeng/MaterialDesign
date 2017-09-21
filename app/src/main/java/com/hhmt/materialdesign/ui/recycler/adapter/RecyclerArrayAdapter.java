@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.hhmt.materialdesign.recycler.adapter;
+package com.hhmt.materialdesign.ui.recycler.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
@@ -25,7 +25,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-import com.hhmt.materialdesign.recycler.EasyRecyclerView;
+import com.hhmt.materialdesign.ui.recycler.EasyRecyclerView;
 
 import java.util.ArrayList;
 import java.util.Arrays;

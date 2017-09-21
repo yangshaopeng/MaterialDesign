@@ -1,4 +1,4 @@
-package com.hhmt.materialdesign.recycler;
+package com.hhmt.materialdesign.ui.recycler;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
 import com.hhmt.materialdesign.R;
-import com.hhmt.materialdesign.recycler.adapter.RecyclerArrayAdapter;
+import com.hhmt.materialdesign.ui.recycler.adapter.RecyclerArrayAdapter;
 
 
 public class EasyRecyclerView extends FrameLayout {

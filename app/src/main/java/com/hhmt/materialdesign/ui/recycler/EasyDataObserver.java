@@ -1,8 +1,8 @@
-package com.hhmt.materialdesign.recycler;
+package com.hhmt.materialdesign.ui.recycler;
 
 import android.support.v7.widget.RecyclerView;
 
-import com.hhmt.materialdesign.recycler.adapter.RecyclerArrayAdapter;
+import com.hhmt.materialdesign.ui.recycler.adapter.RecyclerArrayAdapter;
 
 
 public class EasyDataObserver extends RecyclerView.AdapterDataObserver {
