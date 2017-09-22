@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_recycler_and_swipe_refresh"
+            android:icon="@mipmap/ic_launcher"
+            android:title="888" />
+        <item
+            android:id="@+id/nav_scrolling"
+            android:icon="@mipmap/ic_launcher"
+            android:title="777" />
+        <item
+            android:id="@+id/nav_full_screen"
+            android:icon="@mipmap/ic_launcher"
+            android:title="666" />
+        <item
+            android:id="@+id/nav_bottom_navigation"
+            android:icon="@mipmap/ic_launcher"
+            android:title="555" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@mipmap/ic_launcher"
+            android:title="444" />
+    </group>
+
+    <group android:id="@+id/group_about">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@mipmap/ic_launcher"
+            android:title="333" />
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@mipmap/ic_launcher"
+            android:title="222" />
+    </group>
+
+    <item android:title="MyApp">
+        <menu>
+            <item
+                android:id="@+id/nav_color"
+                android:icon="@mipmap/ic_launcher"
+                android:title="111" />
+        </menu>
+    </item>
+
+</menu>

@@ -11,4 +11,10 @@ package com.hhmt.materialdesign.utils;
 
 public class GConstDef {
     public static final String BASE_URL = "https://api.tuchong.com/";
+
+    public static final int NET_READ_DEFAULT_TIME = 10000;
+
+    public static final int NET_WRITE_DEFAULT_TIME = 10000;
+
+    public static final int NET_CONNECT_DEFAULT_TIME = 10000;
 }

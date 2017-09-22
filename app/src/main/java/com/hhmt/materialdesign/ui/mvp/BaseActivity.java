@@ -2,11 +2,15 @@ package com.hhmt.materialdesign.ui.mvp;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
+import android.view.View;
 
 import com.hannesdorfmann.mosby.mvp.MvpActivity;
 import com.hannesdorfmann.mosby.mvp.MvpPresenter;
 import com.hannesdorfmann.mosby.mvp.MvpView;
 import com.hannesdorfmann.mosby.mvp.delegate.ActivityMvpDelegate;
+import com.hhmt.materialdesign.di.annotation.LayoutResource;
 
 /**
  * author    : yangshaopeng
@@ -19,9 +23,16 @@ import com.hannesdorfmann.mosby.mvp.delegate.ActivityMvpDelegate;
 
 public abstract class BaseActivity<V extends MvpView, P extends MvpPresenter<V>> extends MvpActivity<V, P> {
 
+
+    protected Toolbar toolbar;
+    private View view;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        initLayout();
+        initView(view);
     }
 
     @Override
@@ -107,5 +118,28 @@ public abstract class BaseActivity<V extends MvpView, P extends MvpPresenter<V>>
     public Object onRetainNonMosbyCustomNonConfigurationInstance() {
         return super.onRetainNonMosbyCustomNonConfigurationInstance();
     }
+
+    public void initLayout() {
+        LayoutResource layoutResource = getClass().getAnnotation(LayoutResource.class);
+        view = LayoutInflater.from(this).inflate(layoutResource.value(), null, false);
+        setContentView(view);
+        if (view != null && getToolbarId() != 0) {
+            toolbar = (Toolbar) view.findViewById(getToolbarId());
+            toolbar.setTitle("");
+            setSupportActionBar(toolbar);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
+        }
+    }
+
+    public int getToolbarId() {
+        return 0;
+    }
+
+    public abstract void initView(View view);
 
 }

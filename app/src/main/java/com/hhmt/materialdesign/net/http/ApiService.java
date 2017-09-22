@@ -1,5 +1,10 @@
 package com.hhmt.materialdesign.net.http;
 
+import com.hhmt.materialdesign.net.response.RecommendResponse;
+
+import retrofit2.http.GET;
+import rx.Observable;
+
 /**
  * author    : yangshaopeng
  * email     : ysp@btomorrow.cn
@@ -10,5 +15,8 @@ package com.hhmt.materialdesign.net.http;
  */
 
 public interface ApiService {
+
+    @GET("feed-app")
+    Observable<RecommendResponse> getRecommend();
 
 }
