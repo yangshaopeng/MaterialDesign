@@ -1,5 +1,6 @@
 package com.hhmt.materialdesign.md;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetDialog;
@@ -19,6 +20,7 @@ public class MdMainActivity extends AppCompatActivity implements View.OnClickLis
     private NavigationView navigationView;
     private Toolbar toolbar;
     private Button popupBottom;
+    private Button statusBottom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,17 +40,20 @@ public class MdMainActivity extends AppCompatActivity implements View.OnClickLis
             }
         });
 
+
     }
 
     private void initView() {
         toolbar = (Toolbar)findViewById(R.id.toolbar_main);
         navigationView = (NavigationView) findViewById(R.id.navigation);
         popupBottom = (Button)findViewById(R.id.popup_bottom);
+        statusBottom = (Button)findViewById(R.id.translucent_bottom);
     }
 
     private void initData() {
         toolbar.setTitle("MaterialDesign");
         popupBottom.setOnClickListener(this);
+        statusBottom.setOnClickListener(this);
     }
 
     @Override
@@ -73,6 +78,9 @@ public class MdMainActivity extends AppCompatActivity implements View.OnClickLis
                     }
                 });
                 bottomSheetDialog.show();
+                break;
+            case R.id.translucent_bottom:
+                startActivity(new Intent(this, Translucent.class));
                 break;
         }
     }

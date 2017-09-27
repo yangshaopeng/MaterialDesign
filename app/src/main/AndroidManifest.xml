@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.CoordinateActivity" />
-        <activity android:name=".ui.activity.MainActivity"/>
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".md.Translucent"></activity>
     </application>
 
 </manifest>

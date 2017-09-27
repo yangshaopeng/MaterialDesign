@@ -42,5 +42,6 @@ dependencies {
     compile 'com.google.dagger:dagger:2.9'
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'org.greenrobot:greendao:3.2.2'
+    compile 'com.jaeger.statusbarutil:library:1.4.0'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.9'
 }
