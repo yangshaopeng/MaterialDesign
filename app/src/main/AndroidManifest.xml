@@ -23,7 +23,9 @@
         </activity>
         <activity android:name=".ui.activity.CoordinateActivity" />
         <activity android:name=".ui.activity.MainActivity" />
-        <activity android:name=".md.Translucent"></activity>
+        <activity android:name=".md.Translucent" />
+        <activity android:name=".md.RecyclerViewActivity" />
+        <activity android:name=".md.FabActivity"></activity>
     </application>
 
 </manifest>

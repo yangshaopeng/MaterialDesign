@@ -28,7 +28,7 @@ public class MainActivity extends BaseActivity<MainView, MainPresenter> implemen
 
     @Override
     public void initView(View view) {
-        recyclerView =  view.findViewById(R.id.main_recommend_rv);
+        recyclerView = ((RecyclerView) view.findViewById(R.id.main_recommend_rv));
         adapter = new MainRecommendAdapter(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
