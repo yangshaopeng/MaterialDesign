@@ -19,4 +19,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/collasping_toolbar_layout"
+        android:fitsSystemWindows="true"
+        android:textAllCaps="false"
+        android:text="collasping_toolbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
 </LinearLayout>

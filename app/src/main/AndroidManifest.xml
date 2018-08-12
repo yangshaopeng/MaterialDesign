@@ -25,7 +25,8 @@
         <activity android:name=".ui.activity.MainActivity" />
         <activity android:name=".md.Translucent" />
         <activity android:name=".md.RecyclerViewActivity" />
-        <activity android:name=".md.FabActivity"></activity>
+        <activity android:name=".md.FabActivity" />
+        <activity android:name=".md.CollapsingToolBarLayoutActivity"></activity>
     </application>
 
 </manifest>

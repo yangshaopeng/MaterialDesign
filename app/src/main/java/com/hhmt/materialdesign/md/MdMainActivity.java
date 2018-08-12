@@ -2,12 +2,9 @@ package com.hhmt.materialdesign.md;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.hhmt.materialdesign.R;
 
@@ -15,6 +12,7 @@ public class MdMainActivity extends AppCompatActivity implements View.OnClickLis
 
     private Button recyclerBtn;
     private Button floatingActionButton;
+    private Button collaspingBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +22,11 @@ public class MdMainActivity extends AppCompatActivity implements View.OnClickLis
 
         recyclerBtn = (Button) findViewById(R.id.recycler_view);
         floatingActionButton = (Button) findViewById(R.id.float_btn);
+        collaspingBtn = (Button) findViewById(R.id.collasping_toolbar_layout);
 
         recyclerBtn.setOnClickListener(this);
         floatingActionButton.setOnClickListener(this);
+        collaspingBtn.setOnClickListener(this);
     }
 
     @Override
@@ -38,6 +38,9 @@ public class MdMainActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.float_btn:
                 startActivity(new Intent(this, FabActivity.class));
+                break;
+                case R.id.collasping_toolbar_layout:
+                startActivity(new Intent(this, CollapsingToolBarLayoutActivity.class));
                 break;
             default:
                 break;
