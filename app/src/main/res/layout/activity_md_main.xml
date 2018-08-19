@@ -27,5 +27,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/snack_bar"
+        android:fitsSystemWindows="true"
+        android:textAllCaps="false"
+        android:text="snack_bar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>
