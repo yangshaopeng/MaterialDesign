@@ -7,12 +7,11 @@
     tools:context=".md.CollapsingToolBarLayoutActivity">
 
     <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
         android:layout_width="match_parent"
         android:layout_height="260dp">
 
         <android.support.design.widget.CollapsingToolbarLayout
-            app:statusBarScrim="@color/colorAccent"
-            app:contentScrim="@color/colorPrimaryDark"
             app:title="杨少鹏"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             android:layout_width="match_parent"
@@ -26,7 +25,8 @@
                 android:layout_height="match_parent" />
 
             <android.support.v7.widget.Toolbar
-                android:background="@color/colorPrimaryDark"
+                android:id="@+id/toolbar"
+                android:fitsSystemWindows="true"
                 app:layout_collapseMode="pin"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"/>
