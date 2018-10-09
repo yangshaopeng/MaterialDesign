@@ -27,7 +27,8 @@
         <activity android:name=".md.RecyclerViewActivity" />
         <activity android:name=".md.FabActivity" />
         <activity android:name=".md.CollapsingToolBarLayoutActivity" />
-        <activity android:name=".md.SnackBarActivity"></activity>
+        <activity android:name=".md.SnackBarActivity" />
+        <activity android:name=".md.DrawLayoutActivity"></activity>
     </application>
 
 </manifest>

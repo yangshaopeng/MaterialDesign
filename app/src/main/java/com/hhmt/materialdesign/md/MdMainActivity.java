@@ -14,6 +14,7 @@ public class MdMainActivity extends AppCompatActivity implements View.OnClickLis
     private Button floatingActionButton;
     private Button collaspingBtn;
     private Button snackBarBtn;
+    private Button drawerLayoutBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +26,13 @@ public class MdMainActivity extends AppCompatActivity implements View.OnClickLis
         floatingActionButton = (Button) findViewById(R.id.float_btn);
         collaspingBtn = (Button) findViewById(R.id.collasping_toolbar_layout);
         snackBarBtn = (Button) findViewById(R.id.snack_bar);
+        drawerLayoutBtn = (Button) findViewById(R.id.drawer_layout_bar);
 
         recyclerBtn.setOnClickListener(this);
         floatingActionButton.setOnClickListener(this);
         collaspingBtn.setOnClickListener(this);
         snackBarBtn.setOnClickListener(this);
+        drawerLayoutBtn.setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +50,9 @@ public class MdMainActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.snack_bar:
                 startActivity(new Intent(this, SnackBarActivity.class));
+                break;
+            case R.id.drawer_layout_bar:
+                startActivity(new Intent(this, DrawLayoutActivity.class));
                 break;
             default:
                 break;
